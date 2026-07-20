@@ -37,7 +37,7 @@ def predict():
                 flash(f"Invalid number for {name}: {val}", "danger")
                 return redirect(url_for("index"))
             values.append(fv)
-
+            
         X = np.array(values, dtype=np.float32).reshape(1, -1)
         pred = model.predict(X)[0]        # 1 or 0
         prob = model.predict_proba(X)[0].max()
