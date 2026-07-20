@@ -1,0 +1,15 @@
+# Environments
+venv/
+env/
+.env
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Mac OS
+.DS_Store
+
+# Ignore the trained model if it's too large (Optional, but usually good practice unless it's a small model)
+# model.joblib
